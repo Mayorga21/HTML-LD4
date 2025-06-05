@@ -1,0 +1,116 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mi</title>
+        <link rel= "icon" href="KamhService.ico">
+        <link rel="preload" href="CSS/SobreMi.css" as="style">
+</head>
+<body>
+
+    <h1>Bienvenido a la pagina Sobre MI</h1>
+
+    <a href="index.html"> Pagina de Inicio</a>
+    </h1>
+
+     <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .slider {
+      width: 50%;
+      margin: auto;
+      overflow: hidden;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+    }
+
+    .slides {
+      display: flex;
+      width: 300%;
+      animation: slide 9s infinite;
+    }
+
+    .slides img {
+      width: 100%;
+      height: auto;
+    }
+
+    @keyframes slide {
+      0%   { transform: translateX(0); }
+      33%  { transform: translateX(-100%); }
+      66%  { transform: translateX(-200%); }
+      100% { transform: translateX(0); }
+    }
+
+    .hover-box {
+      margin: 30px auto;
+      padding: 20px;
+      width: 200px;
+      background-color: #eee;
+      transition: background-color 0.3s;
+    }
+
+    .hover-box:hover {
+      background-color: #add8e6; 
+      cursor: pointer;
+    }
+
+    .media {
+      margin: 20px auto;
+    }
+
+    .open-button {
+      padding: 10px 20px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .open-button:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+
+  <h2>Carrusel de Imágenes</h2>
+  <div class="slider">
+    <div class="slides">
+      <img src="cindy.jpg" alt="Imagen 1">
+      <img src="paris3.jpg" alt="Imagen 2">
+      <img src="paris2.jpg" alt="Imagen 3">
+    </div>
+  </div>
+
+  <div class="hover-box">
+    Pasa el mouse sobre mí
+  </div>
+
+  <div class="media">
+    <h3>Imagen</h3>
+    <img src="paris.jpg" alt="paris">
+
+    <h3>Video</h3>
+    <video width="400" controls>
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+
+    </video>
+  </div>
+
+  <br>
+  <button class="open-button" onclick="openAction()">Open</button>
+
+  <script>
+    function openAction() {
+      alert("¡Botón 'Open' presionado!");
+    }
+  </script>
+
+</body>
+</html>
